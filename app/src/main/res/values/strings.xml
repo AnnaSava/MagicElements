@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">Magic Elements</string>
-    <string name="game_message">Mix these elements!</string>
+    <string name="game_message">Mix elements to get substances!</string>
 </resources>

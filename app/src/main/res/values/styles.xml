@@ -2,21 +2,21 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light">
         <!-- Primary theme color of the app (sets background color of app bar) -->
-        <item name="colorPrimary">#0dafff</item>
+        <item name="colorPrimary">#56d5ff</item>
         <!-- Background color of buttons in the app -->
-        <item name="colorButtonNormal">#0dafff</item>
+        <item name="colorButtonNormal">#56d5ff</item>
     </style>
 
     <style name="Fire.Button" parent="AppTheme">
-        <item name="colorAccent">#fd9d90</item>
+        <item name="colorAccent">#4b5a68</item>
     </style>
     <style name="Earth.Button" parent="AppTheme">
-        <item name="colorAccent">#bbaba9</item>
+        <item name="colorAccent">#4b5a68</item>
     </style>
     <style name="Water.Button" parent="AppTheme">
-        <item name="colorAccent">#a5c4e4</item>
+        <item name="colorAccent">#4b5a68</item>
     </style>
     <style name="Air.Button" parent="AppTheme">
-        <item name="colorAccent">#b2a7c7</item>
+        <item name="colorAccent">#4b5a68</item>
     </style>
 </resources>
