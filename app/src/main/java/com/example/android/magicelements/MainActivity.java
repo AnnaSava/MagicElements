@@ -35,6 +35,60 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putInt("fire", fire);
+        outState.putInt("water", water);
+        outState.putInt("earth", earth);
+        outState.putInt("air", air);
+
+        outState.putInt("ice", ice);
+        outState.putInt("steam", steam);
+        outState.putInt("silt", silt);
+        outState.putInt("sand", sand);
+        outState.putInt("spark", spark);
+        outState.putInt("lava", lava);
+
+        outState.putInt("fireNext", fireNext);
+        outState.putInt("waterNext", waterNext);
+        outState.putInt("earthNext", earthNext);
+        outState.putInt("airNext", airNext);
+
+        TextView messageView = (TextView) findViewById(R.id.message);
+        String message = messageView.getText().toString();
+        outState.putString("message", message);
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        fire = savedInstanceState.getInt("fire");
+        water = savedInstanceState.getInt("water");
+        earth = savedInstanceState.getInt("earth");
+        air = savedInstanceState.getInt("air");
+
+        ice = savedInstanceState.getInt("ice");
+        steam = savedInstanceState.getInt("steam");
+        silt = savedInstanceState.getInt("silt");
+        sand = savedInstanceState.getInt("sand");
+        spark = savedInstanceState.getInt("spark");
+        lava = savedInstanceState.getInt("lava");
+
+        fireNext = savedInstanceState.getInt("fireNext");
+        waterNext = savedInstanceState.getInt("waterNext");
+        earthNext = savedInstanceState.getInt("earthNext");
+        airNext = savedInstanceState.getInt("airNext");
+
+        displayAllScores();
+
+        displayAllNexts();
+
+        String message = savedInstanceState.getString("message");
+        displayMessage(message);
+
+        super.onRestoreInstanceState(savedInstanceState);
+    }
+
     public void addFire(View view) {
         fire += fireNext;
         checkElements();
@@ -111,6 +165,22 @@ public class MainActivity extends AppCompatActivity {
 
         displayMessage(message);
 
+        displayAllScores();
+    }
+
+    public void resetGame(View view) {
+        fire = water = earth = air = 0;
+        ice = steam = silt = sand = spark = lava = 0;
+        fireNext = waterNext = earthNext = airNext = 1;
+
+        displayAllScores();
+
+        displayMessage(getString(R.string.game_message));
+
+        displayAllNexts();
+    }
+
+    public void displayAllScores() {
         displayFire(fire);
         displayWater(water);
         displayEarth(earth);
@@ -122,6 +192,13 @@ public class MainActivity extends AppCompatActivity {
         displaySand(sand);
         displaySpark(spark);
         displayLava(lava);
+    }
+
+    public void  displayAllNexts()    {
+        displayFireNext(fireNext);
+        displayWaterNext(waterNext);
+        displayEarthNext(earthNext);
+        displayAirNext(airNext);
     }
 
     public void displayFire(int score) {

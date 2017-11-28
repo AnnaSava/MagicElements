@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Magic Elements</string>
+    <string name="game_message">Mix these elements!</string>
 </resources>

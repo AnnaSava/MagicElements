@@ -128,7 +128,7 @@
         android:textSize="30sp"
         android:gravity="center_horizontal"
         android:layout_margin="16dp"
-        android:text="Mix these elements!" />
+        android:text="@string/game_message" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -245,6 +245,7 @@
         android:layout_margin="20dp"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
+        android:onClick="resetGame"
         android:text="New game"/>
 
 
