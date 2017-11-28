@@ -3,4 +3,21 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="topScoreText">#bfeefe</color>
+    <color name="messageText">#56d5ff</color>
+
+    <color name="fireScoreBg">#b3120f</color>
+    <color name="earthScoreBg">#6c403c</color>
+    <color name="waterScoreBg">#386496</color>
+    <color name="airScoreBg">#4d3f69</color>
+
+    <color name="fireScoreText">#ffc3bb</color>
+    <color name="earthScoreText">#d0c5c4</color>
+    <color name="waterScoreText">#bcecfc</color>
+    <color name="airScoreText">#cfc7de</color>
+
+    <color name="fireButtonText">#920906</color>
+    <color name="earthButtonText">#4f2b27</color>
+    <color name="waterButtonText">#275283</color>
+    <color name="airButtonText">#3b2e56</color>
 </resources>

@@ -1,11 +1,22 @@
 <resources>
-
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Primary theme color of the app (sets background color of app bar) -->
+        <item name="colorPrimary">#0dafff</item>
+        <!-- Background color of buttons in the app -->
+        <item name="colorButtonNormal">#0dafff</item>
     </style>
 
+    <style name="Fire.Button" parent="AppTheme">
+        <item name="colorAccent">#fd9d90</item>
+    </style>
+    <style name="Earth.Button" parent="AppTheme">
+        <item name="colorAccent">#bbaba9</item>
+    </style>
+    <style name="Water.Button" parent="AppTheme">
+        <item name="colorAccent">#a5c4e4</item>
+    </style>
+    <style name="Air.Button" parent="AppTheme">
+        <item name="colorAccent">#b2a7c7</item>
+    </style>
 </resources>
